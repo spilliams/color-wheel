@@ -1,0 +1,9 @@
+.cw {
+  border-spacing: 0;
+}
+.cw td {
+  content: " ";
+  width: 1px;
+  height: 1px;
+  padding: 0;
+}
