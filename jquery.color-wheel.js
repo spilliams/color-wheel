@@ -5,7 +5,7 @@
  */
 
 (function($){
-  var debugCW = true
+  var debugCW = false
   function debugLog(msg) {
     if (debugCW)
       console.log(msg)

@@ -18,13 +18,18 @@
         $("[name=colorWheelPicker]").click(function(){
           $("[name=colorWheelPickerFormat]").attr('value',$(this).attr('value'))
           picker = $(this).attr('value').split(',')
-          gen()
+          if (picker[0] != "")
+            gen()
+          else
+            $("[name=colorWheelPickerFormat]").focus()
         })
         $("[name=colorWheelPickerFormat]").change(function(){
+          picker = $(this).attr('value').split(',')
           gen()
         })
       }) // ready
       function gen() {
+        console.log("gen")
         $(".color-wheel").colorWheel({
           type:type,
           showPicker:true,
@@ -59,8 +64,7 @@
       <input type='radio' name='colorWheelPicker' value='0,60,180,240'> Tetradic
       <input type='radio' name='colorWheelPicker' value='0,90,180,270'> Square
       <input type='radio' name='colorWheelPicker' value=''> Custom<br>
-      format: <input type='text' value='0' name='colorWheelPickerFormat'><br>
-      <button onclick='gen();return false'>Generate</button>
+      format: <input type='text' value='0' name='colorWheelPickerFormat'>
     </div>
     <div class='color-wheel'></div>
   </body>
