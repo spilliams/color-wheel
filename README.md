@@ -82,7 +82,7 @@ Note that all picked colors will be at the same radius in the wheel.
   <tr>
     <td>showPicker</td>
     <td>{picker, radius, slider}</td>
-    <td>Shows the picker. (Shows the picked colors in separate swatches, and highlights them on the wheel). <code>type</code> is a string or array (see the <code>picker</code> option above). Note that arguments are optional. A call to this method without arguments will attempt to show a picker that was previously hidden.</td>
+    <td>Shows the picker. (Shows the picked colors in separate swatches, and highlights them on the wheel). <code>picker</code> is a string or array (see the <code>picker</code> option above). Note that arguments are optional. A call to this method without arguments will attempt to show a picker that was previously hidden.</td>
   </tr>
   <tr>
     <td>hidePicker</td>
