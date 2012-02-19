@@ -11,9 +11,6 @@
   height: 1px;
   padding: 0;
 }
-.cw td .inCircle {
-  cursor: crosshair;
-}
 .cw-loupe {
   position: absolute;
   top: 0;
