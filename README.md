@@ -6,7 +6,7 @@ Make sure you include jQuery (>=1.7) in your header, as well as any other js or 
 
 #API
 
-You can make a simple hsl color wheel by putting some `<div class='cw'></div>` in your html, and some `$('.cw').colorWheel()` in your script. Hooray! You can pass it options to make it fancier!
+You can make a simple hsl color wheel by putting some `<div class='cw'></div>` in your html, and some `$('.cw').colorWheel()` in your script. You can pass it options to make it fancier!
 
 ##Options
 
@@ -33,6 +33,6 @@ You can make a simple hsl color wheel by putting some `<div class='cw'></div>` i
     <td>bg</td>
     <td>string (color)</td>
     <td>"transparent"</td>
-    <td>The background of the circle</td>
+    <td>The color of the background of the circle.</td>
   </tr>
 </table>
