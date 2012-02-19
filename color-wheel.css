@@ -1,4 +1,6 @@
-.cw {
+/* THESE STYLES ARE NECESSARY */
+.cw table {
+  position: relative;
   border-spacing: 0;
 }
 .cw td {
@@ -6,4 +8,25 @@
   width: 1px;
   height: 1px;
   padding: 0;
+}
+.cw-loupe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius:4px;
+}
+
+/* THESE STYLES ARE FANCY */
+/* (put your own fancy styles here) */
+.cw-swatch {
+  height: 40px;
+  width: 300px;
+}
+.cw-loupe {
+  border: 2px solid white;
+}
+.cw-loupe.first {
+  border: 2px solid black;
 }

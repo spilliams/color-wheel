@@ -7,11 +7,18 @@
     <link rel="stylesheet" type="text/css" href="color-wheel.css" />
     <script type='text/javascript'>
       $(document).ready(function(){
-        $(".color-wheel").colorWheel()
+        $(".color-wheel").colorWheel({
+          type:'hsl',
+          showPicker:true,
+          picker:'analogous'
+        })
       })
     </script>
   </head>
   <body>
+    <div>
+      
+    </div>
     <div class='color-wheel'></div>
   </body>
 </html>
