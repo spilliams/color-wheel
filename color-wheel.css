@@ -1,6 +1,8 @@
 /* THESE STYLES ARE NECESSARY */
-.cw table {
+.cw-wheel {
   position: relative;
+}
+.cw table {
   border-spacing: 0;
 }
 .cw td {
@@ -8,6 +10,9 @@
   width: 1px;
   height: 1px;
   padding: 0;
+}
+.cw td .inCircle {
+  cursor: crosshair;
 }
 .cw-loupe {
   position: absolute;
@@ -20,6 +25,9 @@
 
 /* THESE STYLES ARE FANCY */
 /* (put your own fancy styles here) */
+.cw-wheel {
+  display: inline-block;
+}
 .cw-swatch {
   height: 40px;
   width: 300px;

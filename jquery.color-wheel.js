@@ -177,8 +177,8 @@
           dy = options.radius*uy
           dx = options.radius*ux
           debugLog("dx: "+dx+", dy: "+dy)
-          x = Math.round(maxRadius+2+dx) // the loupe has a width
-          y = Math.round(maxRadius+2+dy) // the loupe has a height
+          x = Math.round(maxRadius+dx-6) // the loupe has a width
+          y = Math.round(maxRadius+dy-6) // the loupe has a height
           
           // get the color at the coordinates
           color = $($($(this).find("tr")[y]).find("td")[x]).css('background-color');
