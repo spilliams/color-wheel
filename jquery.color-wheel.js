@@ -70,9 +70,9 @@
             s = [0,100,50];
         }
         slider = "<input type='range' min='"+s[0]+"' max='"+s[1]+"' value='"+s[2]+"' style='width:"+(2*r)+"px;'>"
-
+        swatches = "<div class='cw-swatches'></div>"
         wrapper = $("<div class='cw cw-wrapper'></div>")
-        wrapper.append(wheel).append("<br>"+slider)
+        wrapper.append(wheel).append("<br>"+slider+swatches)
 
         $(this).html(wrapper)
         
@@ -164,6 +164,8 @@
         debugLog("maxRadius: "+maxRadius)
         swatches = $("");
         loupes = $("");
+        $(this).find(".cw-loupe").remove()
+        $(this).find(".cw-swatches").empty()
         for(i=0;i<options.degrees.length;i++) {
           debugLog("point picked. degrees:")
           debugLog(options.degrees[i])
@@ -184,7 +186,7 @@
           
           
           $(this).find(".cw-wheel").append($("<div class='cw-picker cw-loupe"+(i==0 ? ' first':'')+"'></div>").css({'top':(""+y+"px"),'left':(""+x+"px"),'backgroundColor':color}));
-          $(this).find(".cw-wrapper").append($("<div class='cw-picker cw-swatch'></div>").css({'backgroundColor':color}));
+          $(this).find(".cw-swatches").append($("<div class='cw-picker cw-swatch'></div>").css({'backgroundColor':color}));
         }
       });
     },
