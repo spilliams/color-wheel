@@ -1,5 +1,7 @@
 I made this jQuery plugin to help me generate a palette that had specific requirements. Maybe you find it helpful too.
 
+This project was doomed to abandonment almost as soon as it was created, because I found http://colorschemedesigner.com/.
+
 #Installation
 
 Make sure you include jQuery (>=1.7) in your header, as well as any other js or css files found here
